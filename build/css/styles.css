@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Rubik:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  font-family: "Rubik", sans-serif;
+  font-size: 62.5%;
+  font-weight: 400;
+}
+
+body {
+  font-size: 1.8rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0 3rem;
+}
+.main-nav .logo-mobile {
+  display: none;
+}
+.main-nav .hamburger-icon {
+  display: none;
+}
+.main-nav .close-icon {
+  display: none;
+}
+.main-nav .navigations {
+  display: flex;
+}
+.main-nav .navigations .link-container {
+  margin-left: 2rem;
+  padding: 0.7rem 2.5rem;
+  border: 1px solid transparent;
+}
+.main-nav .navigations .link-container:hover {
+  color: #fa5757;
+}
+.main-nav .navigations .link-container:active {
+  border: 1px solid #fa5757;
+}
+
+.social-links {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    transition: all 500ms ease;
+  }
+  header .main-nav .navigations {
+    display: none;
+  }
+  header .main-nav .hamburger-icon {
+    display: block;
+  }
+  header.active {
+    position: absolute;
+    background: rgba(37, 43, 70, 0.9);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 2rem 4rem;
+  }
+  header.active .main-nav {
+    position: relative;
+    height: 100%;
+    align-items: flex-start;
+  }
+  header.active .main-nav .logo-desktop {
+    display: none;
+  }
+  header.active .main-nav .logo-mobile {
+    display: block;
+  }
+  header.active .main-nav .icon-mobile {
+    display: block;
+    margin-top: -14px;
+  }
+  header.active .main-nav .navigations {
+    display: block;
+    color: #fff;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    text-align: center;
+  }
+  header.active .main-nav .link-container {
+    border-top: 1px solid #9194a1;
+    padding: 1.7rem 0;
+  }
+  header.active .main-nav .link-container:nth-child(3) {
+    border-bottom: 1px solid #9194a1;
+  }
+  header.active .main-nav .navigation-link {
+    font-size: 2rem;
+  }
+  header.active .main-nav .link-mobile {
+    border: 2px solid #fff;
+    border-radius: 7px;
+    margin-top: 2.8rem;
+  }
+  header.active .main-nav .link-mobile .navigation-link {
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  header.active .social-links {
+    display: block;
+    position: absolute;
+    bottom: 5rem;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  header.active .social-links a:first-child {
+    margin-right: 3rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

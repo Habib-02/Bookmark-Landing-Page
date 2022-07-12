@@ -1,0 +1,23 @@
+{
+  "name": "front-end-mentor-chalanges",
+  "version": "1.0.0",
+  "description": "Frontend Mentor Chalange",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass -w src/scss/main.scss:build/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Habib-02/Bookmark-Landing-Page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Habib-02/Bookmark-Landing-Page/issues"
+  },
+  "homepage": "https://github.com/Habib-02/Bookmark-Landing-Page#readme",
+  "devDependencies": {
+    "sass": "^1.53.0"
+  }
+}
